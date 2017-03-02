@@ -2,16 +2,13 @@
   "name": "hahaki",
   "description": "Download to Image of opened image tab",
   "scripts": {
-    "dist": "rsync -r --exclude-from '.exclude' app/ dist/",
-    "postdist": "zip -r hahaki.zip dist/",
+    "zip": "zip hahaki.zip -r app",
     "css": "stylus -w -o app/style/ app/style/*.styl",
-    "js": "coffee -bw -o app/script app/script/*.coffee"
+    "js": "coffee -bw -o app/script app/script/*.coffee",
+    "dev": "concurrently --kill-others 'yarn js' 'yarn css'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/totora0155/hahaki.git"
-  },
-  "author": "nju33",
+  "repository": "nju33/chrome-hahaki",
+  "author": "nju33 <nju33.ki@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/totora0155/hahaki#readme",
   "devDependencies": {

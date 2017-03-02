@@ -1,5 +1,5 @@
 angular.module 'hahaki', []#, ($httpProvider) ->
-.constant 'IMG_RE', /\.(?:jpe?g|png|gif)$/
+.constant 'IMG_RE', /\.(?:jpe?g|png|gif)[^.]*$/
 .filter 'size', ->
   (tabs) -> (_.filter tabs, (tab) -> tab.remove is false).length
 .filter 'base64', ->
