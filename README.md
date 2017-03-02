@@ -1,19 +1,25 @@
-# Hahaki
+<h1><img src="https://github.com/nju33/chrome-hahaki/blob/master/app/icon/icon_38.png?raw=true" width="30">&nbsp;Hahaki</h1>
 
-Download to Image of opened image tab
+Download aimed images only. (Download only the opened image tab)
 
-## Install
+## Development
 
-```
-npm install
+### Install
+
+```bash
+yarn
 ```
 
-## Task
+###  Task
+
+```basg
+yarn dev # development
+yarn zip # zipped
 ```
-# .styl -> .css
-npm run css
-# .coffee -> .js
-npm run js
-# create zip
-npm run deploy
-```
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2017 nju33 <nju33.ki@gmail.com>
+
